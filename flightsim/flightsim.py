@@ -96,7 +96,7 @@ async def create_clouds():
     if game_over:
         return
 
-    y = randint(sc.bottom, sc.top - 15)  # random y between bottom and top of screen minus padding
+    y = randint(int(sc.bottom), int(sc.top - 15))  # random y between bottom and top of screen minus padding
     start_left = randint(0, 1) == 1
     start_x = sc.left if start_left else sc.right
 
